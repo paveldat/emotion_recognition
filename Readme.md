@@ -1,4 +1,4 @@
-# Gesture volume control
+# Recognition of emotions from a photo
 In this project I will analyze how you can find out age, gender, race and emotion from a photo.
 
 ## How to install
