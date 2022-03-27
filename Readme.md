@@ -11,7 +11,7 @@ In this project I will analyze how you can find out age, gender, race and emotio
 4. Write path to the image you want to analyze and press ENTER
 
 ## Result
-<img src="https://github.com/paveldat/emotion_recognition/blob/main/img/1.jpg">
+<img src="https://github.com/paveldat/emotion_recognition/blob/main/img/2.jpg">
 
 ```
 Age: 24
