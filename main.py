@@ -1,9 +1,9 @@
 from deepface import DeepFace
 import json
 
-def analyze_face_emotions():
+def analyze_face_emotions(path_to_image):
 	try:
-		result = DeepFace.analyze(img_path='img/1.jpg', actions=['age', 'gender', 'race', 'emotion'])
+		result = DeepFace.analyze(img_path=path_to_image, actions=['age', 'gender', 'race', 'emotion'])
 		
 		print(f'Age: {result.get("age")}')
 		print(f'Gender: {result.get("gender")}')
@@ -25,7 +25,12 @@ def analyze_face_emotions():
 		return ex
 
 def main():
-	analyze_face_emotions()
+	print("Please, type the name of the file. Or press enter to skip. Default name is /img/1.jpg\n")
+	path_to_image = input()
+	if not path_to_image:
+		path_to_image = 'img/1.jpg'
+
+	analyze_face_emotions(path_to_image)
 
 if __name__ == '__main__':
 	main()
